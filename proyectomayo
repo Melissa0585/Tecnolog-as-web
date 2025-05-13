@@ -11,7 +11,14 @@
         human.reduce((mayor, actual) => actual.edad > mayor.edad ? actual : mayor);
 
     const obtenerMenor = (human: human1[]): human1 =>
-        human.reduce((mayor, actual) => actual.edad > mayor.edad ? actual : mayor);
+        human.reduce((menor, actual) => actual.edad < menor.edad ? actual : menor);
 
+    const mayor= obtenerMayor(human);
+    const menor=obtenerMenor(human);
 
+    console.log(`${menor.nombre}, es el menor con ${menor.edad}años`);
+    console.log( `${mayor.nombre}, es el mayor con ${menor.edad} años`);
+
+   
 })
+

@@ -1,11 +1,17 @@
 (()=>{
 
     type human1={nombre:String, edad:Number};
-    let human:human1[]= [{nombre:"Hugo",edad:35},{nombre:"Paco", edad:50},{nombre:"Luis", edad:40}, {nombre:"Pedro", edad:18}, {nombre:"Hector", edad:30}]
+    let human:human1[]= [{nombre:"Hugo",edad:35},
+        {nombre:"Paco", edad:50},
+        {nombre:"Luis", edad:40}, 
+        {nombre:"Pedro", edad:18}, 
+        {nombre:"Hector", edad:30}]
 
     const obtenerMayor = (human: human1[]): human1 =>
         human.reduce((mayor, actual) => actual.edad > mayor.edad ? actual : mayor);
 
-    //console.log(nombre,"es el menor con",edad,"años");
-    //console.log(nombre,"es el mayor con",edad,"años");
+    const obtenerMenor = (human: human1[]): human1 =>
+        human.reduce((mayor, actual) => actual.edad > mayor.edad ? actual : mayor);
+
+
 })

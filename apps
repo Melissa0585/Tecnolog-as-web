@@ -1,1 +1,44 @@
+(() => {
 
+    // Tipos
+    const batman = 'Bruce';
+    const superman = 'Clark';
+  
+    const existe = false;
+  
+    // Tuplas
+    const parejaHeroes = [batman,superman];
+    const villano = ['Lex Lutor',5,true];
+  
+    // Arreglos
+    enum aliados{MujerMaravilla,Acuaman,San,Flash}
+  
+  
+    //Enumeraciones
+
+    enum fuerza{
+     fuerzaFlash = 5,
+     fuerzaSuperman = 100,
+     fuerzaBatman = 1,
+     fuerzaAcuaman = 0,
+    }
+
+
+    // Retorno de funciones
+    function activar_batiseñal():void{
+      return;
+    }
+  
+    function pedir_ayuda(){
+      console.log('Auxilio!!!');
+    }
+  
+    // Aserciones de Tipo
+    const poder: any = '100';
+    const largoDelPoder:number = poder.length;
+    console.log( largoDelPoder );
+  
+  
+  })()
+  
+  

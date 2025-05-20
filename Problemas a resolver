@@ -13,3 +13,21 @@
 
 
 ***** Problema 2 *****
+(() => {
+const addTwoNumbers= (params) => params.first + params.second;
+  
+   () => {
+    console.log(
+      addTwoNumbers({
+        first: 2,
+        second: 4,
+      })
+      === 6 ? 'Igual a 6' : 'No igual a 6') ;
+  
+    console.log(
+      addTwoNumbers({
+        first: 10,
+        second: 20,
+      })=== 6 ? 'Igual a 30' : 'No igual a 30');
+  };
+})();

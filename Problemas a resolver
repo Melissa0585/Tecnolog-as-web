@@ -1,0 +1,15 @@
+***** Problema 1 *****
+(() => {
+    const addTwoNumbers=(a:number, b:number) => a + b;
+  
+    const testAddTwoNumbers = () => {
+      console.log(addTwoNumbers(2, 4) === 6 ? 'Equals to 6' : ' No equals to 6');
+      console.log(addTwoNumbers(10, 10) === 20 ? 'Equals to 20' : 'No equals to 6');
+    };
+  
+    testAddTwoNumbers();
+  })();
+  
+
+
+***** Problema 2 *****

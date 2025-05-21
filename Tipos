@@ -60,7 +60,7 @@ let charles = {
 
 type apoca = {
  lider: boolean,
-  miembros: string
+  miembros: string[];
  
 };
 

@@ -1,0 +1,13 @@
+type coche = {
+  carroceria: string,
+  modelo: number,
+  antibalas: boolean,
+  pasajeros:number
+};
+
+let batimovil = {
+  carroceria: "Negra",
+  modelo: "6x6",
+  antibalas: true,
+  pasajeros:4
+};

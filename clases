@@ -1,5 +1,4 @@
-
-    class Inventory{
+class Chef{
         
     constructor(
         public name:string,
@@ -12,10 +11,11 @@
     }
     }
 
-    const inventory:Inventory=new Inventory('Heriberto',
+    const chef:Chef=new Chef('Heriberto',
         3567,
         'Juventino',
     );
 
     console.log(chef);
     console.log(chef.name);
+   

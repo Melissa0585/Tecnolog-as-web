@@ -1,11 +1,12 @@
-type coche = {
-  carroceria: string,
-  modelo: number,
-  antibalas: boolean,
-  pasajeros:number
+type Coche = {
+  carroceria: string;
+  modelo: number;
+  antibalas: boolean;
+  pasajeros:number;
+  disparar? :()=>void;
 };
 
-let batimovil = {
+let batimovil:Carro = {
   carroceria: "Negra",
   modelo: "6x6",
   antibalas: true,
@@ -22,15 +23,15 @@ let bumblebee = {
   }
 };
 
-type malos = {
-  nombre: string,
-  edad: number,
-  mutante: boolean,
+type Malos = {
+  nombre: string;
+  edad?: number;
+  mutante: boolean;
   
 };
 
 // Villanos debe de ser un arreglo de objetos personalizados
-const villanos = [{
+const villanos:Malos[] = [{
   nombre:"Lex Luthor",
   edad: 54,
   mutante:false
@@ -44,9 +45,9 @@ const villanos = [{
   mutante: true
 }];
 
-type char = {
-  poder: string,
-  estatura: number,
+type Char = {
+  poder: string;
+  estatura: number;
 };
 
 
@@ -58,13 +59,13 @@ let charles = {
 };
 
 
-type apoca = {
- lider: boolean,
+type Apoca = {
+ lider: boolean;
   miembros: string[];
  
 };
 
-let apocalipsis = {
+let apocalipsis:Apoca = {
   lider:true,
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }

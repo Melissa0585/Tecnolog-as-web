@@ -1,0 +1,21 @@
+
+    class Inventory{
+        
+    constructor(
+        public name:string,
+        public id:number,
+        public location:string,
+    ){
+        this.name=name;
+        this.id=id;
+        this.location=location;
+    }
+    }
+
+    const inventory:Inventory=new Inventory('Heriberto',
+        3567,
+        'Juventino',
+    );
+
+    console.log(chef);
+    console.log(chef.name);

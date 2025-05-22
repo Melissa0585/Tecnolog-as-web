@@ -1,12 +1,12 @@
 type Coche = {
   carroceria: string;
-  modelo: number;
+  modelo: string;
   antibalas: boolean;
   pasajeros:number;
   disparar? :()=>void;
 };
 
-let batimovil:Carro = {
+let batimovil:Coche = {
   carroceria: "Negra",
   modelo: "6x6",
   antibalas: true,
@@ -71,7 +71,7 @@ let apocalipsis:Apoca = {
 }
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
+let mystique:Char|Apoca;
 
 mystique = charles;
 mystique = apocalipsis;

@@ -1,0 +1,23 @@
+°°° Ejemplo 1 °°°
+function car <Type>(args: Type): Type {
+  return args;
+}
+ --- Ejemplo 2. Función para que funcione con matrices --- 
+function loggingCars<Type>(arg: Type[]): Type[] {
+  console.log(arg.length);
+  return arg;
+}
+
+*** Ejemplo 3 . Interface genérica ***
+interface GenericCars {
+  <Type>(arg: Type): Type;
+}
+ 
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
+ 
+let myIdentity: GenericCars = identity;
+
+
+https://www.typescriptlang.org/docs/handbook/2/generics.html 

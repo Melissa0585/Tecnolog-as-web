@@ -25,10 +25,9 @@ export async function viajar(): Promise<void> { //otra función asincrónica que
 
 viajar();
 
-import { viajar } from './promesa';
+import { viajar, esperarTransporte } from './promesa';
 esperarTransporte();
 viajar();
-
 
 
 ****** Ejemplo 2: Escuchar Música Mientras Conduces

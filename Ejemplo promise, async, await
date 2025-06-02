@@ -23,7 +23,6 @@ export async function viajar(): Promise<void> { //otra función asincrónica que
   }
 }
 
-viajar();
 
 import { viajar, esperarTransporte } from './promesa';
 esperarTransporte();

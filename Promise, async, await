@@ -1,0 +1,29 @@
+// Función que simula una consulta a una API -Interfaz de Programación de Aplicaciones
+export function consultarAPI(): Promise<string> {  //Declara la función que devuelve
+promesa con un valor string
+
+  return new Promise((resolve, reject) => { //crea y retorna promesa con parametros
+resolve y reflect
+
+    setTimeout(() => { //simula operación asincrona
+      const exito = true; // Cambiar a false para simular un error
+      if (exito) { // const simula si operacion fue exitosa
+        resolve("Datos obtenidos con éxito");
+      } else {
+        reject("Error al obtener los datos");
+      }
+    }, 2000); //despues de 2 seg se ejecuta funcion
+  });
+}
+
+// Función asíncrona que maneja la consulta
+export async function obtenerDatos(): Promise<void> { //declara funcion asincrona 
+devuelve valor void 
+
+  try { //ejecuta código dentro del bloque try si ocurre error captura en catch
+    const resultado = await consultarAPI(); //lama funcion 
+    console.log(resultado); // Salida: Datos obtenidos con éxito
+  } catch (error) {
+    console.error(error); // Salida: Error al obtener los datos
+  }
+}

@@ -1,0 +1,46 @@
+****** Ejemplo 1: Conducir al Trabajo 
+
+async function conducirAlTrabajo(): Promise<void> {
+  console.log("Iniciando el viaje...");
+  await new Promise(resolve => setTimeout(resolve, 15000)); // Simula el tiempo de conducción
+  console.log("Llegaste al trabajo.");
+}
+
+async function rutinaMatutina(): Promise<void> {
+  console.log("Comenzando la rutina...");
+  await conducirAlTrabajo();
+  console.log("Rutina matutina completada.");
+}
+
+rutinaMatutina();
+
+****** Ejemplo 2: Escuchar Música Mientras Conduces
+
+async function escucharMusica(): Promise<void> {
+  console.log("Reproduciendo música...");
+  await new Promise(resolve => setTimeout(resolve, 15000)); // Simula el tiempo de reproducción
+  console.log("Música detenida.");
+}
+
+async function conducirConMusica(): Promise<void> {
+  console.log("Comenzando el viaje...");
+  await Promise.all([conducirAlTrabajo(), escucharMusica()]);
+  console.log("Viaje y música completados.");
+}
+
+conducirConMusica();
+
+****** Ejemplo 3: Esperar el Transporte Público
+async function esperarTransporte(): Promise<void> {
+  console.log("Esperando transporte...");
+  await new Promise(resolve => setTimeout(resolve, 1000)); // Simula el tiempo de espera
+  console.log("Transporte llegó.");
+}
+
+async function viajar(): Promise<void> {
+  console.log("Iniciando viaje...");
+  await esperarTransporte();
+  console.log("Viaje completado.");
+}
+
+viajar();
